@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="نيو باور جلوبال - الشركة الرائدة في الكلاوركات الكهربائية، بطاريات الجر الصناعية والشواحن، صيانة معدات المناولة، وقسم خاص للإيجار في مصر.">
+  <title>نيو باور جلوبال | حلول الطاقة والمناولة الصناعية المتكاملة</title>
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Global Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Browser Favicon -->
+  <link rel="icon" type="image/jpeg" href="images/ss.jpeg">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <img src="images/ss.jpeg" alt="New Power Global Logo" class="logo-img">
+        <div class="logo-text">نيو باور <span>جلوبال</span></div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link active" data-i18n="nav_home">الرئيسية</a>
+        <a href="about.html" class="nav-link" data-i18n="nav_about">من نحن</a>
+        <a href="products.html" class="nav-link" data-i18n="nav_products">المنتجات</a>
+        <a href="rentals.html" class="nav-link" data-i18n="nav_rentals">التأجير</a>
+        <a href="maintenance.html" class="nav-link" data-i18n="nav_maintenance">الصيانة والدعم</a>
+        <a href="contact.html" class="nav-link" data-i18n="nav_contact">اتصل بنا</a>
+        <div class="nav-actions">
+          <button class="lang-toggle" id="lang-toggle" data-i18n="lang_btn">English</button>
+          <a href="contact.html?type=quote" class="btn btn-primary" data-i18n="nav_cta">طلب عرض سعر</a>
+        </div>
+      </nav>
+
+      <!-- Hamburger Menu for Mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section with Slideshow Background -->
+  <section class="hero" id="hero">
+    <!-- Ken Burns Slideshow -->
+    <div class="hero-slideshow" id="hero-slideshow">
+      <div class="hero-slide active" style="background-image: url('images/hero_forklift.png');"></div>
+      <div class="hero-slide" style="background-image: url('images/electric_forklift.png');"></div>
+      <div class="hero-slide" style="background-image: url('images/traction_battery.png');"></div>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Content (Text) -->
+        <div class="hero-content scroll-animate">
+          <span class="hero-tagline" data-i18n="hero_subtitle">نيو باور جلوبال لخدمات الطاقة والمناولة</span>
+          <h1 data-i18n="hero_title">طاقة ذكية وحلول مناولة صناعية متكاملة</h1>
+          <p data-i18n="hero_desc">الشركة المصرية الرائدة في توريد وصيانة الكلاوركات الكهربائية، بطاريات الجر، الشواحن الصناعية، وتقديم خدمات الإيجار والدعم الفني المعتمد بأعلى معايير الاستدامة والأمان.</p>
+          <div class="hero-btns">
+            <a href="products.html" class="btn btn-primary" data-i18n="hero_cta_primary">استكشف منتجاتنا <i class="fa-solid fa-arrow-left btn-icon"></i></a>
+            <a href="contact.html" class="btn btn-secondary" data-i18n="hero_cta_secondary">اتصل بنا الآن</a>
+          </div>
+        </div>
+        <!-- Hero Visual (Image & Badge) -->
+        <div class="hero-visual scroll-animate scroll-animate-delay-1">
+          <div class="hero-image-wrapper">
+            <img src="images/كلارك كهربائي  حمولة 2.5 طن.png" alt="Electric Forklift and Traction Battery">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Counter Bar (Dynamic counting) -->
+  <section class="stats-bar" id="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <!-- Stat Item 1 -->
+        <div class="stat-item scroll-animate">
+          <h3><span class="stat-number" data-target="15">0</span>+</h3>
+          <p data-i18n="stats_experience_title">عاماً من الخبرة</p>
+        </div>
+        <!-- Stat Item 2 -->
+        <div class="stat-item scroll-animate scroll-animate-delay-1">
+          <h3><span class="stat-number" data-target="500">0</span>+</h3>
+          <p data-i18n="stats_clients_title">عميل يثق بنا</p>
+        </div>
+        <!-- Stat Item 3 -->
+        <div class="stat-item scroll-animate scroll-animate-delay-2">
+          <h3><span class="stat-number" data-target="120">0</span>+</h3>
+          <p data-i18n="stats_rented_num">رافعة في أسطول الإيجار</p>
+        </div>
+        <!-- Stat Item 4 -->
+        <div class="stat-item scroll-animate scroll-animate-delay-3">
+          <h3><span class="stat-number" data-target="24">0</span>/7</h3>
+          <p data-i18n="stats_maintenance_title">ساعة دعم فني وصيانة</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who We Are (About Us) Section -->
+  <section class="section-padding" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Visual Column -->
+        <div class="about-visual scroll-animate">
+          <img class="about-image-main" src="images/forklift_maintenance.png" alt="Forklifts Battery Maintenance">
+        </div>
+        <!-- Content Column -->
+        <div class="about-content scroll-animate scroll-animate-delay-1">
+          <div class="section-header" style="margin: 0 0 2rem 0; text-align: start;">
+            <h2 data-i18n="about_title">من نحن</h2>
+            <p class="accent-text" data-i18n="about_subtitle" style="font-weight:600; margin-top: 5px;">ريادة مصرية برؤية ومعايير عالمية</p>
+          </div>
+          <p data-i18n="about_desc_1">شركة نيو باور جلوبال (New Power Global) هي كيان مصري رائد ومتكامل في مجال توفير معدات مناولة المواد الكهربائية وحلول الطاقة النظيفة. نقوم بتوريد وبيع وتأجير الكلاوركات الكهربائية المتقدمة وحلول بطاريات الجر الصناعية التي تلبي متطلبات المصانع الكبرى والمستودعات ومراكز اللوجستيات في كافة المحافظات.</p>
+          <p data-i18n="about_desc_2">بفضل خبراتنا المتراكمة وفريقنا الهندسي المتخصص، نقدم لعملائنا عقود صيانة شاملة للبطاريات والمعدات، ومجموعة كاملة من قطع الغيار الأصلية. نحن ملتزمون بمساعدة شركائنا على تقليل التكاليف التشغيلية والانتقال إلى طاقة نظيفة خالية من الانبعاثات الكربونية.</p>
+          
+          <div class="about-features">
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-i18n="about_feature_1">بطاريات جر صناعية فائقة الجودة وطويلة العمر.</span>
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-i18n="about_feature_2">رافعات شوكية كهربائية بحمولات تبدأ من 2.5 طن حتى 10 طن.</span>
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-i18n="about_feature_3">أطقم مهندسين وفنيين مدربين للاستجابة الفورية لأعطال الصيانة.</span>
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-i18n="about_feature_4">حلول تأجير تمويلية وتشغيلية مرنة تناسب الميزانيات المختلفة.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strategic Pillars Section -->
+  <section class="section-padding" id="pillars" style="background-color: var(--primary-deep);">
+    <div class="container">
+      <div class="section-header text-center scroll-animate">
+        <h2 data-i18n="pillars_title">ركائزنا الإستراتيجية</h2>
+        <p data-i18n="pillars_subtitle">الأسس والقيم التي نوجه بها أعمالنا نحو المستقبل</p>
+      </div>
+
+      <div class="pillars-grid">
+        <!-- Pillar 1: Vision -->
+        <div class="pillar-card scroll-animate">
+          <div class="pillar-icon-box">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <h3 data-i18n="pillar_vision_title">رؤيتنا</h3>
+          <p data-i18n="pillar_vision_desc">أن تصبح نيو باور جلوبال الاسم الأول والشركة الرائدة في السوق المصري في توريد وتصنيع بطاريات المعدات والرافعات الكهربائية بجودة احترافية تدعم الاقتصاد الأخضر وتلبي احتياجات التوسع الصناعي في مصر.</p>
+        </div>
+
+        <!-- Pillar 2: Mission -->
+        <div class="pillar-card scroll-animate scroll-animate-delay-1">
+          <div class="pillar-icon-box">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <h3 data-i18n="pillar_mission_title">رسالتنا</h3>
+          <p data-i18n="pillar_mission_desc">تحقيق التميز التشغيلي لعملائنا من خلال تقديم منتجات موثوقة وعالية الأداء، وخدمات صيانة آمنة وسريعة الاستجابة وفق أحدث الآليات العالمية وبأقل تكلفة تشغيلية ممكنة.</p>
+        </div>
+
+        <!-- Pillar 3: Goals -->
+        <div class="pillar-card scroll-animate scroll-animate-delay-2">
+          <div class="pillar-icon-box">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <h3 data-i18n="pillar_goals_title">أهدافنا</h3>
+          <p data-i18n="pillar_goals_desc">تأهيل وتدريب كوادر هندسية متميزة، تقديم خدمات ما بعد البيع تضمن استمرارية أعمال عملائنا بدون توقف، ونيل رضا شركاء نجاحنا والمحافظة على علاقات ثقة طويلة الأمد.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Partners (Our Clients) Section -->
+  <section class="section-padding" id="clients" style="background-color: var(--bg-dark); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border); padding: 5rem 0;">
+    <div class="container">
+      <div class="section-header text-center scroll-animate">
+        <h2 data-i18n="clients_title">شركاء النجاح</h2>
+        <p data-i18n="clients_subtitle">كبرى الشركات والمؤسسات اللوجستية والصناعية التي تثق بخدماتنا وبحلولنا المبتكرة</p>
+      </div>
+    </div>
+    
+    <!-- Infinite Logo Marquee -->
+    <div class="logo-slider">
+      <div class="logo-slider-track">
+        <!-- Set 1 -->
+        <!-- Logo 1: Juhayna -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <path d="M15,25 C15,13 25,12 30,20 C35,28 25,38 20,38 C17,38 15,33 15,25 Z" fill="#10B981" />
+              <path d="M21,25 C21,18 28,18 30,22 C32,26 28,33 25,33 C23,33 21,30 21,25 Z" fill="#F59E0B" />
+              <circle cx="27" cy="18" r="2.5" fill="#34D399" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="15" fill="#F8FAFC">جهينة</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#34D399" letter-spacing="0.5">JUHAYNA</text>
+          </svg>
+        </div>
+        <!-- Logo 2: Edita -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <circle cx="25" cy="25" r="16" fill="#EF4444" />
+              <path d="M16,23 C16,18 25,17 31,21 C34,23 34,26 31,27 C28,28 20,29 18,25 M18,25 L32,25" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M20,32 C23,35 27,35 30,32" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="15" fill="#F8FAFC">إيديتا</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#EF4444" letter-spacing="0.5">EDITA</text>
+          </svg>
+        </div>
+        <!-- Logo 3: El Araby -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <path d="M12,25 C12,15 20,10 27,15 C34,20 38,28 35,35 C32,42 22,40 18,37" stroke="#2563EB" stroke-width="3.5" fill="none" stroke-linecap="round" />
+              <path d="M19,25 C19,19 25,16 29,20 C33,24 33,30 29,32 C25,34 21,31 19,28" stroke="#06B6D4" stroke-width="2.5" fill="none" stroke-linecap="round" />
+              <circle cx="25" cy="25" r="3" fill="#06B6D4" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="15" fill="#F8FAFC">العربي</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="10.5" fill="#38BDF8" letter-spacing="0.5">EL ARABY GROUP</text>
+          </svg>
+        </div>
+        <!-- Logo 4: Ezz Steel -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <polygon points="25,9 38,17 38,33 25,41 12,33 12,17" stroke="#DC2626" stroke-width="3" fill="none" stroke-linejoin="round" />
+              <line x1="25" y1="9" x2="25" y2="41" stroke="#DC2626" stroke-width="2.5" />
+              <line x1="12" y1="17" x2="25" y2="25" stroke="#DC2626" stroke-width="2" />
+              <line x1="38" y1="17" x2="25" y2="25" stroke="#DC2626" stroke-width="2" />
+              <line x1="12" y1="33" x2="25" y2="25" stroke="#DC2626" stroke-width="2" />
+              <line x1="38" y1="33" x2="25" y2="25" stroke="#DC2626" stroke-width="2" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="15" fill="#F8FAFC">حديد عز</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#DC2626" letter-spacing="0.5">EZZ STEEL</text>
+          </svg>
+        </div>
+        <!-- Logo 5: Elsewedy Electric -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <path d="M14,30 C12,23 20,18 25,18 C30,18 36,23 34,30 C32,37 24,32 20,32 C16,32 16,37 25,37 C34,37 36,31 36,27" stroke="#F97316" stroke-width="3.5" fill="none" stroke-linecap="round" />
+              <circle cx="25" cy="25" r="4" fill="#F97316" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="13.5" fill="#F8FAFC">السويدي إليكتريك</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="10" fill="#FB923C" letter-spacing="0.5">ELSEWEDY ELECTRIC</text>
+          </svg>
+        </div>
+        <!-- Logo 6: PepsiCo -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <circle cx="25" cy="25" r="16" fill="#0C2340" />
+              <path d="M11,18 C16,13 25,11 31,14 C36,16 39,21 39,25 C31,22 22,23 15,26 C12,25 11,21 11,18 Z" fill="#E31837" />
+              <path d="M11,32 C16,37 25,39 31,36 C36,34 39,29 39,25 C31,28 22,27 15,24 C12,25 11,29 11,32 Z" fill="#004B87" />
+              <path d="M15,24 C22,27 31,28 39,25 C39,25 39,25 39,25 C31,22 22,23 15,26 C15,25 15,24 15,24 Z" fill="#FFFFFF" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="15" fill="#F8FAFC">بيبسي</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#0085CA" letter-spacing="0.5">PEPSICO</text>
+          </svg>
+        </div>
+        <!-- Logo 7: Nestle -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <path d="M12,32 C15,35 35,35 38,32 C35,30 15,30 12,32 Z" fill="#005A9C" />
+              <path d="M16,31 C22,25 32,25 34,31 M20,29 C24,24 28,24 30,29" stroke="#005A9C" stroke-width="2" fill="none" />
+              <path d="M18,30 C18,22 14,24 16,19 C18,17 21,17 22,21 L22,28" fill="#005A9C" />
+              <path d="M26,29 C26,26 28,26 28,29 C28,30 26,30 26,29 Z" fill="#005A9C" />
+              <path d="M30,29 C30,26 32,26 32,29 C32,30 30,30 30,29 Z" fill="#005A9C" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="14" fill="#F8FAFC">نستله</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#005A9C" letter-spacing="0.5">NESTLE</text>
+          </svg>
+        </div>
+        <!-- Logo 8: Coca-Cola -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <path d="M10,25 C20,15 30,35 40,25" stroke="#F11A22" stroke-width="4.5" fill="none" stroke-linecap="round" />
+              <path d="M10,32 C20,22 30,42 40,32" stroke="#F11A22" stroke-width="2" fill="none" stroke-linecap="round" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="14" fill="#F8FAFC">كوكاكولا</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="700" font-size="10.5" fill="#F11A22" letter-spacing="0.2">COCA-COLA</text>
+          </svg>
+        </div>
+
+        <!-- Set 2 -->
+        <!-- Logo 9: Juhayna -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <path d="M15,25 C15,13 25,12 30,20 C35,28 25,38 20,38 C17,38 15,33 15,25 Z" fill="#10B981" />
+              <path d="M21,25 C21,18 28,18 30,22 C32,26 28,33 25,33 C23,33 21,30 21,25 Z" fill="#F59E0B" />
+              <circle cx="27" cy="18" r="2.5" fill="#34D399" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="15" fill="#F8FAFC">جهينة</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#34D399" letter-spacing="0.5">JUHAYNA</text>
+          </svg>
+        </div>
+        <!-- Logo 10: Edita -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <circle cx="25" cy="25" r="16" fill="#EF4444" />
+              <path d="M16,23 C16,18 25,17 31,21 C34,23 34,26 31,27 C28,28 20,29 18,25 M18,25 L32,25" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M20,32 C23,35 27,35 30,32" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="15" fill="#F8FAFC">إيديتا</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#EF4444" letter-spacing="0.5">EDITA</text>
+          </svg>
+        </div>
+        <!-- Logo 11: El Araby -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <path d="M12,25 C12,15 20,10 27,15 C34,20 38,28 35,35 C32,42 22,40 18,37" stroke="#2563EB" stroke-width="3.5" fill="none" stroke-linecap="round" />
+              <path d="M19,25 C19,19 25,16 29,20 C33,24 33,30 29,32 C25,34 21,31 19,28" stroke="#06B6D4" stroke-width="2.5" fill="none" stroke-linecap="round" />
+              <circle cx="25" cy="25" r="3" fill="#06B6D4" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="15" fill="#F8FAFC">العربي</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="10.5" fill="#38BDF8" letter-spacing="0.5">EL ARABY GROUP</text>
+          </svg>
+        </div>
+        <!-- Logo 12: Ezz Steel -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <polygon points="25,9 38,17 38,33 25,41 12,33 12,17" stroke="#DC2626" stroke-width="3" fill="none" stroke-linejoin="round" />
+              <line x1="25" y1="9" x2="25" y2="41" stroke="#DC2626" stroke-width="2.5" />
+              <line x1="12" y1="17" x2="25" y2="25" stroke="#DC2626" stroke-width="2" />
+              <line x1="38" y1="17" x2="25" y2="25" stroke="#DC2626" stroke-width="2" />
+              <line x1="12" y1="33" x2="25" y2="25" stroke="#DC2626" stroke-width="2" />
+              <line x1="38" y1="33" x2="25" y2="25" stroke="#DC2626" stroke-width="2" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="15" fill="#F8FAFC">حديد عز</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#DC2626" letter-spacing="0.5">EZZ STEEL</text>
+          </svg>
+        </div>
+        <!-- Logo 13: Elsewedy Electric -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <path d="M14,30 C12,23 20,18 25,18 C30,18 36,23 34,30 C32,37 24,32 20,32 C16,32 16,37 25,37 C34,37 36,31 36,27" stroke="#F97316" stroke-width="3.5" fill="none" stroke-linecap="round" />
+              <circle cx="25" cy="25" r="4" fill="#F97316" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="13.5" fill="#F8FAFC">السويدي إليكتريك</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="10" fill="#FB923C" letter-spacing="0.5">ELSEWEDY ELECTRIC</text>
+          </svg>
+        </div>
+        <!-- Logo 14: PepsiCo -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <circle cx="25" cy="25" r="16" fill="#0C2340" />
+              <path d="M11,18 C16,13 25,11 31,14 C36,16 39,21 39,25 C31,22 22,23 15,26 C12,25 11,21 11,18 Z" fill="#E31837" />
+              <path d="M11,32 C16,37 25,39 31,36 C36,34 39,29 39,25 C31,28 22,27 15,24 C12,25 11,29 11,32 Z" fill="#004B87" />
+              <path d="M15,24 C22,27 31,28 39,25 C39,25 39,25 39,25 C31,22 22,23 15,26 C15,25 15,24 15,24 Z" fill="#FFFFFF" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="15" fill="#F8FAFC">بيبسي</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#0085CA" letter-spacing="0.5">PEPSICO</text>
+          </svg>
+        </div>
+        <!-- Logo 15: Nestle -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <path d="M12,32 C15,35 35,35 38,32 C35,30 15,30 12,32 Z" fill="#005A9C" />
+              <path d="M16,31 C22,25 32,25 34,31 M20,29 C24,24 28,24 30,29" stroke="#005A9C" stroke-width="2" fill="none" />
+              <path d="M18,30 C18,22 14,24 16,19 C18,17 21,17 22,21 L22,28" fill="#005A9C" />
+              <path d="M26,29 C26,26 28,26 28,29 C28,30 26,30 26,29 Z" fill="#005A9C" />
+              <path d="M30,29 C30,26 32,26 32,29 C32,30 30,30 30,29 Z" fill="#005A9C" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="14" fill="#F8FAFC">نستله</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#005A9C" letter-spacing="0.5">NESTLE</text>
+          </svg>
+        </div>
+        <!-- Logo 16: Coca-Cola -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <path d="M10,25 C20,15 30,35 40,25" stroke="#F11A22" stroke-width="4.5" fill="none" stroke-linecap="round" />
+              <path d="M10,32 C20,22 30,42 40,32" stroke="#F11A22" stroke-width="2" fill="none" stroke-linecap="round" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="14" fill="#F8FAFC">كوكاكولا</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="700" font-size="10.5" fill="#F11A22" letter-spacing="0.2">COCA-COLA</text>
+          </svg>
+        </div>
+
+        <!-- Set 3 -->
+        <!-- Logo 17: Juhayna -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <path d="M15,25 C15,13 25,12 30,20 C35,28 25,38 20,38 C17,38 15,33 15,25 Z" fill="#10B981" />
+              <path d="M21,25 C21,18 28,18 30,22 C32,26 28,33 25,33 C23,33 21,30 21,25 Z" fill="#F59E0B" />
+              <circle cx="27" cy="18" r="2.5" fill="#34D399" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="15" fill="#F8FAFC">جهينة</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#34D399" letter-spacing="0.5">JUHAYNA</text>
+          </svg>
+        </div>
+        <!-- Logo 18: Edita -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <circle cx="25" cy="25" r="16" fill="#EF4444" />
+              <path d="M16,23 C16,18 25,17 31,21 C34,23 34,26 31,27 C28,28 20,29 18,25 M18,25 L32,25" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M20,32 C23,35 27,35 30,32" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="15" fill="#F8FAFC">إيديتا</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#EF4444" letter-spacing="0.5">EDITA</text>
+          </svg>
+        </div>
+        <!-- Logo 19: El Araby -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <path d="M12,25 C12,15 20,10 27,15 C34,20 38,28 35,35 C32,42 22,40 18,37" stroke="#2563EB" stroke-width="3.5" fill="none" stroke-linecap="round" />
+              <path d="M19,25 C19,19 25,16 29,20 C33,24 33,30 29,32 C25,34 21,31 19,28" stroke="#06B6D4" stroke-width="2.5" fill="none" stroke-linecap="round" />
+              <circle cx="25" cy="25" r="3" fill="#06B6D4" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="15" fill="#F8FAFC">العربي</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="10.5" fill="#38BDF8" letter-spacing="0.5">EL ARABY GROUP</text>
+          </svg>
+        </div>
+        <!-- Logo 20: Ezz Steel -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <polygon points="25,9 38,17 38,33 25,41 12,33 12,17" stroke="#DC2626" stroke-width="3" fill="none" stroke-linejoin="round" />
+              <line x1="25" y1="9" x2="25" y2="41" stroke="#DC2626" stroke-width="2.5" />
+              <line x1="12" y1="17" x2="25" y2="25" stroke="#DC2626" stroke-width="2" />
+              <line x1="38" y1="17" x2="25" y2="25" stroke="#DC2626" stroke-width="2" />
+              <line x1="12" y1="33" x2="25" y2="25" stroke="#DC2626" stroke-width="2" />
+              <line x1="38" y1="33" x2="25" y2="25" stroke="#DC2626" stroke-width="2" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="15" fill="#F8FAFC">حديد عز</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#DC2626" letter-spacing="0.5">EZZ STEEL</text>
+          </svg>
+        </div>
+        <!-- Logo 21: Elsewedy Electric -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <path d="M14,30 C12,23 20,18 25,18 C30,18 36,23 34,30 C32,37 24,32 20,32 C16,32 16,37 25,37 C34,37 36,31 36,27" stroke="#F97316" stroke-width="3.5" fill="none" stroke-linecap="round" />
+              <circle cx="25" cy="25" r="4" fill="#F97316" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="13.5" fill="#F8FAFC">السويدي إليكتريك</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="10" fill="#FB923C" letter-spacing="0.5">ELSEWEDY ELECTRIC</text>
+          </svg>
+        </div>
+        <!-- Logo 22: PepsiCo -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <circle cx="25" cy="25" r="16" fill="#0C2340" />
+              <path d="M11,18 C16,13 25,11 31,14 C36,16 39,21 39,25 C31,22 22,23 15,26 C12,25 11,21 11,18 Z" fill="#E31837" />
+              <path d="M11,32 C16,37 25,39 31,36 C36,34 39,29 39,25 C31,28 22,27 15,24 C12,25 11,29 11,32 Z" fill="#004B87" />
+              <path d="M15,24 C22,27 31,28 39,25 C39,25 39,25 39,25 C31,22 22,23 15,26 C15,25 15,24 15,24 Z" fill="#FFFFFF" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="15" fill="#F8FAFC">بيبسي</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#0085CA" letter-spacing="0.5">PEPSICO</text>
+          </svg>
+        </div>
+        <!-- Logo 23: Nestle -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <path d="M12,32 C15,35 35,35 38,32 C35,30 15,30 12,32 Z" fill="#005A9C" />
+              <path d="M16,31 C22,25 32,25 34,31 M20,29 C24,24 28,24 30,29" stroke="#005A9C" stroke-width="2" fill="none" />
+              <path d="M18,30 C18,22 14,24 16,19 C18,17 21,17 22,21 L22,28" fill="#005A9C" />
+              <path d="M26,29 C26,26 28,26 28,29 C28,30 26,30 26,29 Z" fill="#005A9C" />
+              <path d="M30,29 C30,26 32,26 32,29 C32,30 30,30 30,29 Z" fill="#005A9C" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="14" fill="#F8FAFC">نستله</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#005A9C" letter-spacing="0.5">NESTLE</text>
+          </svg>
+        </div>
+        <!-- Logo 24: Coca-Cola -->
+        <div class="logo-slide">
+          <svg viewBox="0 0 200 50" width="160" height="40">
+            <g transform="translate(5, 0)">
+              <path d="M10,25 C20,15 30,35 40,25" stroke="#F11A22" stroke-width="4.5" fill="none" stroke-linecap="round" />
+              <path d="M10,32 C20,22 30,42 40,32" stroke="#F11A22" stroke-width="2" fill="none" stroke-linecap="round" />
+            </g>
+            <text x="52" y="24" font-family="'Cairo', sans-serif" font-weight="700" font-size="14" fill="#F8FAFC">كوكاكولا</text>
+            <text x="52" y="39" font-family="'Poppins', sans-serif" font-weight="700" font-size="10.5" fill="#F11A22" letter-spacing="0.2">COCA-COLA</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Business Sections (Services Preview) -->
+
+  <section class="section-padding bg-light-section" id="core-business">
+    <div class="container">
+      <div class="section-header text-center scroll-animate">
+        <h2 data-i18n="business_title">مجالات عملنا الرئيسية</h2>
+        <p data-i18n="business_subtitle">خدمات وحلول مصممة لتلبية متطلبات بيئات العمل القاسية</p>
+      </div>
+
+      <div class="grid grid-4">
+        <!-- 1. Forklifts -->
+        <div class="business-card scroll-animate">
+          <div class="business-image">
+            <img src="images/كلارك كهربائي STILL RX 20-16 - حمولة 1.6 طن.png" alt="Electric Forklifts">
+          </div>
+          <div class="business-info">
+            <div>
+              <h3 data-i18n="business_forklifts_title">الكلاوركات الكهربائية</h3>
+              <p data-i18n="business_forklifts_desc">رافعات شوكية كهربائية متطورة وهادئة وصديقة للبيئة بسعات حمولة من 2.5 طن وحتى 10 طن مع كفاءة طاقة ممتازة.</p>
+            </div>
+            <a href="products.html?category=forklifts" class="btn btn-dark" data-i18n="business_btn">عرض التفاصيل</a>
+          </div>
+        </div>
+
+        <!-- 2. Batteries -->
+        <div class="business-card scroll-animate scroll-animate-delay-1">
+          <div class="business-image">
+            <img src="images/traction_battery.png" alt="Industrial Batteries & Chargers">
+          </div>
+          <div class="business-info">
+            <div>
+              <h3 data-i18n="business_batteries_title">البطاريات والشواحن الصناعية</h3>
+              <p data-i18n="business_batteries_desc">توريد وتجميع بطاريات الجر السائلة والـ Gel وشواحن التردد العالي الذكية لضمان أعلى فترات تشغيل ممكنة.</p>
+            </div>
+            <a href="products.html?category=batteries" class="btn btn-dark" data-i18n="business_btn">عرض التفاصيل</a>
+          </div>
+        </div>
+
+        <!-- 3. Maintenance -->
+        <div class="business-card scroll-animate scroll-animate-delay-2">
+          <div class="business-image">
+            <img src="images/forklift_maintenance.png" alt="Maintenance & Support">
+          </div>
+          <div class="business-info">
+            <div>
+              <h3 data-i18n="business_maintenance_title">الصيانة وقطع الغيار</h3>
+              <p data-i18n="business_maintenance_desc">خدمات صيانة وقائية وعلاجية فورية، مع توفر قطع الغيار الأصلية والإطارات والرولات الهيدروليكية عالية التحمل.</p>
+            </div>
+            <a href="maintenance.html" class="btn btn-dark" data-i18n="business_btn">عرض التفاصيل</a>
+          </div>
+        </div>
+
+        <!-- 4. Rental -->
+        <div class="business-card scroll-animate scroll-animate-delay-3">
+          <div class="business-image">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=600&auto=format&fit=crop" alt="Forklift Rentals">
+          </div>
+          <div class="business-info">
+            <div>
+              <h3 data-i18n="business_rentals_title">قسم الإيجار المرن</h3>
+              <p data-i18n="business_rentals_desc">حلول تأجير قصيرة وطويلة الأجل مع الصيانة الشاملة، للمساعدة في إدارة التدفقات النقدية ومواسم العمل المكثفة.</p>
+            </div>
+            <a href="rentals.html" class="btn btn-dark" data-i18n="business_btn">عرض التفاصيل</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corporate Footer -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="grid grid-4">
+        <!-- Brand -->
+        <div class="footer-brand scroll-animate">
+          <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+            <img src="images/ss.jpeg" alt="New Power Global Logo" class="logo-img">
+            <div class="logo-text">نيو باور <span>جلوبال</span></div>
+          </a>
+          <p data-i18n="footer_company_desc">الاسم الموثوق في مصر لحلول الرافعات الكهربائية وبطاريات الجر الصناعية وعقود الصيانة المتكاملة. نتحرك بثقة نحو صناعة خضراء ومستدامة.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/share/1D26xh3MCu/" target="_blank" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/201061076998" target="_blank" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links scroll-animate scroll-animate-delay-1">
+          <h3 data-i18n="footer_quick_links">وصول سريع</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+            <li><a href="about.html" data-i18n="nav_about">من نحن</a></li>
+            <li><a href="products.html" data-i18n="nav_products">المنتجات</a></li>
+            <li><a href="rentals.html" data-i18n="nav_rentals">التأجير</a></li>
+            <li><a href="maintenance.html" data-i18n="nav_maintenance">الصيانة والدعم</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <!-- Branches -->
+        <div class="footer-branches scroll-animate scroll-animate-delay-2">
+          <h3 data-i18n="footer_branches">فروعنا الرئيسية</h3>
+          <div class="footer-branch-item">
+            <h4 data-i18n="branch_menofia_name">فرع المنوفية - الإدارة والمبيعات الرئيسية</h4>
+            <p data-i18n="branch_menofia_address">مدينة السادات، مجمع آسيا الصناعي، محافظة المنوفية.</p>
+          </div>
+        </div>
+
+        <!-- Contact details -->
+        <div class="footer-contact scroll-animate scroll-animate-delay-3">
+          <h3 data-i18n="footer_contact_info">اتصل بنا</h3>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span data-i18n="phone_sales">قسم المبيعات: 01061076998</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fa-solid fa-gears"></i>
+              <span data-i18n="phone_support">الدعم الفني والصيانة: 01068352122</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span data-i18n="email_info">البريد الإلكتروني: info@newpowerglobal.com</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fa-solid fa-clock"></i>
+              <span data-i18n="working_hours">أوقات العمل: من السبت إلى الخميس (8:00 ص - 5:00 م)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="container footer-bottom">
+      <div class="designer-credits">
+        Designed &amp; Developed by 
+        <a href="https://wa.me/201099444012" target="_blank">Eng. Ahmed Waleed</a> &amp; 
+        <a href="https://wa.me/201095412229" target="_blank">Eng. Eslam Saad</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
